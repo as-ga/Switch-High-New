@@ -1,26 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #ffffff;
+  --secondary-color: #171717;
+  --gray-bg: #f2f2f2;
+  --gray-dark: #2c2c2c;
+  --pink-color: #f20574;
+  --yellow-color: #f59e0b;
+  --green-color: #4d7c0f;
+  --orange-color: #f97316;
+  --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--gray-bg);
+  color: #111111;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Highlight colors matching Doors Studio */
+.pink-highlight {
+  color: var(--pink-color);
+}
+.yellow-highlight {
+  color: var(--yellow-color);
+}
+.green-highlight {
+  color: var(--green-color);
+}
+.orange-highlight {
+  color: var(--orange-color);
+}
+
+/* Animated rotating asterisk */
+@keyframes spinClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-asterisk {
+  display: inline-block;
+  animation: spinClockwise 4s linear infinite;
+  transform-origin: center center;
+}
+
+/* Underline link effects */
+.uline {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.uline::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.uline:hover::after {
+  width: 100%;
+}
+
+.uline-double {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid currentColor;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.uline-double:hover {
+  opacity: 0.75;
+  transform: translateX(4px);
+}
+
+/* Buttons */
+.speak-btn {
+  border-radius: 9999px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.speak-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circle-double {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-align: center;
+  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle-double:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  transform: scale(1.1);
+}
+
+/* Tilted badge bottom right */
+.tiltedbox {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 40;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.tiltedbox:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.tiltedbox-inner {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tiltedbox-inner::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.2); }
+}
+
+/* WhatsApp Icon */
+.whatsappicon {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  z-index: 40;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsappicon:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* Arrow svg hover rotate */
+.arrow-svg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s ease;
+}
+
+.arrow-svg svg {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.arrow-svg:hover svg {
+  transform: rotate(-45deg);
+}
+
+/* Hide scrollbars when desired */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
