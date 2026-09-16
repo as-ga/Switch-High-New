@@ -2,7 +2,7 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Digital Marketing Agency in India | Doors Studio",
+  title: "Digital Marketing Agency in India | Switch High",
   description:
     "Scale your digital presence with social media management, viral UGC content, creator outreach, and community engagement.",
 };
@@ -17,7 +17,7 @@ export default function DigitalMarketingPage() {
       aboutTitle="Cultivating Cult Followings & Active Online Communities"
       aboutDescription={[
         "Modern digital marketing isn’t just posting pretty images—it’s about commanding algorithms, generating viral attention, and nurturing active communities that champion your brand.",
-        "At Doors Studio, we manage your brand's digital ecosystem with precision. From Instagram reels and LinkedIn thought-leadership to creator UGC pipelines and online reputation management, we ensure you dominate the conversation.",
+        "At Switch High, we manage your brand's digital ecosystem with precision. From Instagram reels and LinkedIn thought-leadership to creator UGC pipelines and online reputation management, we ensure you dominate the conversation.",
       ]}
       deliverables={[
         {

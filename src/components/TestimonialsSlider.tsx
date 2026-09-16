@@ -15,28 +15,28 @@ const testimonials: Testimonial[] = [
     name: "Avinash Ojha",
     role: "Managing Director & CEO - RG Hospitals",
     quote:
-      "Doors Studio has completely transformed our online presence! Their team not only understood our brand but also developed a performance-driven marketing strategy that delivered impressive results. We saw a significant boost in leads and conversions within the first month. Highly recommend their services!",
+      "Switch High has completely transformed our online presence! Their team not only understood our brand but also developed a performance-driven marketing strategy that delivered impressive results. We saw a significant boost in leads and conversions within the first month. Highly recommend their services!",
     img: "https://www.doorsstudio.com/assets/front/img/testimonials/avinash.webp",
   },
   {
     name: "Vinamra Agarwal",
     role: "Head - Sales & Marketing, Dhampure",
     quote:
-      "The team at Doors Studio took the time to understand our goals and crafted a tailored marketing plan that exceeded expectations. Their expertise in digital and performance marketing has been instrumental in our growth. We've seen a clear ROI from our campaigns and continue to trust them with our brand.",
+      "The team at Switch High took the time to understand our goals and crafted a tailored marketing plan that exceeded expectations. Their expertise in digital and performance marketing has been instrumental in our growth. We've seen a clear ROI from our campaigns and continue to trust them with our brand.",
     img: "https://www.doorsstudio.com/assets/front/img/testimonials/vinamra.webp",
   },
   {
     name: "Seema Vig",
     role: "Facility Director - Paras Health, Gurugram",
     quote:
-      "Working with Doors Studio has been a game-changer for our business. Their data-driven approach to digital marketing and their commitment to achieving measurable results has helped us grow our customer base significantly. They're more than just a marketing agency; they're true partners in our success.",
+      "Working with Switch High has been a game-changer for our business. Their data-driven approach to digital marketing and their commitment to achieving measurable results has helped us grow our customer base significantly. They're more than just a marketing agency; they're true partners in our success.",
     img: "https://www.doorsstudio.com/assets/front/img/testimonials/seema-vig.webp",
   },
   {
     name: "Gaurav Bansal",
     role: "Director - Polo Elevators",
     quote:
-      "Partnering with Doors Studio was one of the best decisions we made for our business. Their performance marketing strategies have brought in tangible results, and their expertise in the digital space has made a real difference in how we engage with our audience. The team's dedication to our success is unmatched.",
+      "Partnering with Switch High was one of the best decisions we made for our business. Their performance marketing strategies have brought in tangible results, and their expertise in the digital space has made a real difference in how we engage with our audience. The team's dedication to our success is unmatched.",
     img: "https://www.doorsstudio.com/assets/front/img/testimonials/gaurav.webp",
   },
 ];

@@ -2,11 +2,18 @@
 
 import React from "react";
 import Link from "next/link";
-import { Asterisk, ArrowDown, ArrowUpRight, Mail, Sparkles, Compass } from "lucide-react";
+import {
+  Asterisk,
+  ArrowDown,
+  ArrowUpRight,
+  Mail,
+  Sparkles,
+} from "lucide-react";
 import StickyCapabilities from "@/components/StickyCapabilities";
 import ClientMarquee from "@/components/ClientMarquee";
 import TestimonialsSlider from "@/components/TestimonialsSlider";
 import MarqueeHeader from "@/components/MarqueeHeader";
+import WorldMapAnimation from "@/components/WorldMapAnimation";
 import { useModal } from "@/context/ModalContext";
 
 export default function HomePage() {
@@ -21,32 +28,40 @@ export default function HomePage() {
           <div className="lg:col-span-8 flex flex-col">
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black uppercase tracking-tighter leading-[0.9] text-black">
               <div className="flex items-center flex-wrap gap-2 sm:gap-4">
-                <Asterisk size={60} className="spin-asterisk text-black shrink-0" />
+                <Asterisk
+                  size={60}
+                  className="spin-asterisk text-black shrink-0"
+                />
                 <span>Define</span>
-                <span className="text-pink-500">.</span>
+                <span className="pink-highlight">.</span>
                 <span>Design</span>
-                <span className="text-yellow-500">.</span>
+                <span className="yellow-highlight">.</span>
               </div>
               <div className="text-left sm:text-right text-neutral-900">
                 <span>Build</span>
-                <span className="text-green-600">.</span>
+                <span className="green-highlight">.</span>
               </div>
               <div className="flex items-center gap-4 text-left">
-                <ArrowDown size={50} className="text-yellow-500 hidden sm:inline-block shrink-0 animate-bounce" />
+                <ArrowDown
+                  size={50}
+                  className="text-yellow-500 hidden sm:inline-block shrink-0 animate-bounce"
+                />
                 <span>Market</span>
-                <span className="text-orange-500">.</span>
+                <span className="orange-highlight">.</span>
               </div>
             </h1>
           </div>
 
           {/* Subtitle & Mission Card */}
-          <div className="lg:col-span-4 flex flex-col justify-end pt-6 lg:pt-12">
-            <div className="bg-white/80 backdrop-blur-sm border border-neutral-300 rounded-3xl p-6 sm:p-8 shadow-sm">
+          {/* <div className="lg:col-span-4 flex flex-col justify-end pt-6 lg:pt-12">
+            <div className="bg-white/90 backdrop-blur-sm border border-neutral-300 rounded-3xl p-6 sm:p-8 shadow-sm">
               <span className="text-xs uppercase tracking-widest font-mono text-pink-500 font-bold block mb-2">
                 Brand Transformation
               </span>
               <p className="text-base sm:text-lg font-normal leading-relaxed text-neutral-800">
-                <strong>Doors Studio®</strong> is the best digital marketing agency in India that excels in launching, growing, and reinventing brands and startups into market leaders.
+                <strong>Switch High®</strong> is the best digital marketing
+                agency in India that excels in launching, growing, and
+                reinventing brands and startups into market leaders.
               </p>
               <div className="mt-6 flex items-center gap-4">
                 <button
@@ -56,12 +71,15 @@ export default function HomePage() {
                   <span>Enquire Now</span>
                   <Mail size={14} />
                 </button>
-                <Link href="/about-us" className="uline text-xs uppercase font-bold tracking-wider text-black">
+                <Link
+                  href="/about-us"
+                  className="uline text-xs uppercase font-bold tracking-wider text-black"
+                >
                   About Us →
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Scroll Bar Tag */}
@@ -69,7 +87,7 @@ export default function HomePage() {
           <div className="uline-double">Turning Big Ideas Into Bold Brands</div>
           <div className="flex items-center gap-2 font-mono text-neutral-400">
             <span>(Scroll Down)</span>
-            <ArrowDown size={14} />
+            <ArrowDown size={14} className="animate-bounce" />
           </div>
         </div>
       </section>
@@ -86,14 +104,15 @@ export default function HomePage() {
             preload="metadata"
             className="w-full h-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
           <div className="absolute bottom-6 left-6 right-6 sm:bottom-10 sm:left-10 sm:right-10 flex flex-col sm:flex-row justify-between items-start sm:items-end text-white gap-4">
             <div>
               <span className="text-xs font-mono uppercase tracking-widest text-pink-400 font-bold block mb-1">
                 Full-Service Capabilities
               </span>
               <p className="text-sm sm:text-lg uppercase tracking-wider font-semibold">
-                Brand Strategy * Brand Identity * Brand Communication <br className="hidden sm:block" />
+                Brand Strategy * Brand Identity * Brand Communication{" "}
+                <br className="hidden sm:block" />
                 Digital Marketing * Performance Marketing * Web Development
               </p>
             </div>
@@ -109,7 +128,8 @@ export default function HomePage() {
         {/* Big Text: Let's Brand Your Big Idea */}
         <div className="pt-16 pb-8 border-b border-neutral-300">
           <h2 className="text-4xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black uppercase tracking-tighter leading-none text-black">
-            Let&apos;s <span className="text-pink-500">Brand</span> Your Big Idea.
+            Let&apos;s <span className="pink-highlight">Brand</span> Your Big
+            Idea.
           </h2>
         </div>
       </section>
@@ -142,17 +162,23 @@ export default function HomePage() {
             </span>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter leading-tight text-black mb-6">
               Marketing Is Our Jam & <br />
-              <span className="text-pink-500">We Spread It Thick.</span>
+              <span className="pink-highlight">We Spread It Thick.</span>
             </h2>
             <h3 className="text-xl sm:text-2xl font-bold text-neutral-800 mb-6 leading-snug">
               Powerful Digital Marketing Agency Solutions, Spread Wide!
             </h3>
             <div className="flex flex-col gap-4 text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               <p>
-                Doors Studio® is recognized as the best branding and digital marketing agency in India, specializing in crafting future-ready brands through a perfect fusion of vision, creativity, and performance technology.
+                Switch High® is recognized as the best branding and digital
+                marketing agency in India, specializing in crafting future-ready
+                brands through a perfect fusion of vision, creativity, and
+                performance technology.
               </p>
               <p>
-                Our team collaborates with visionary leaders and ambitious companies to deliver impactful brand strategies, high-converting performance marketing, and cutting-edge digital experiences that drive measurable growth in a competitive marketplace.
+                Our team collaborates with visionary leaders and ambitious
+                companies to deliver impactful brand strategies, high-converting
+                performance marketing, and cutting-edge digital experiences that
+                drive measurable growth in a competitive marketplace.
               </p>
             </div>
 
@@ -164,7 +190,10 @@ export default function HomePage() {
                 <span>Enquire Now</span>
                 <Mail size={16} />
               </button>
-              <Link href="/about-us" className="uline-double text-black font-bold uppercase text-sm">
+              <Link
+                href="/about-us"
+                className="uline-double text-black font-bold uppercase text-sm"
+              >
                 Discover Our Story →
               </Link>
             </div>
@@ -188,17 +217,22 @@ export default function HomePage() {
             {/* Left Column: Text & Pitch */}
             <div className="lg:col-span-6 flex flex-col">
               <span className="text-xs uppercase font-mono tracking-widest text-pink-500 font-bold mb-3 block">
-                The Doors Studio® Methodology
+                The Switch High® Methodology
               </span>
               <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tighter leading-tight text-black mb-6">
                 Empowering brands to lead and innovate for what’s next.
               </h2>
               <div className="text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 space-y-4">
                 <p>
-                  At our core, we partner with brands to help them lead and innovate in an ever-evolving digital landscape. Through strategic thinking and creative problem-solving, we enable businesses to adapt to change and anticipate market trends.
+                  At our core, we partner with brands to help them lead and
+                  innovate in an ever-evolving digital landscape. Through
+                  strategic thinking and creative problem-solving, we enable
+                  businesses to adapt to change and anticipate market trends.
                 </p>
                 <p>
-                  Our focus is on shaping strong brand foundations and meaningful digital experiences that prepare businesses for what’s next.
+                  Our focus is on shaping strong brand foundations and
+                  meaningful digital experiences that prepare businesses for
+                  what’s next.
                 </p>
               </div>
 
@@ -210,7 +244,10 @@ export default function HomePage() {
                   <span>Enquire Now</span>
                   <Mail size={14} />
                 </button>
-                <Link href="/our-work" className="uline-double text-black font-bold uppercase text-xs">
+                <Link
+                  href="/our-work"
+                  className="uline-double text-black font-bold uppercase text-xs"
+                >
                   See Our Results →
                 </Link>
               </div>
@@ -234,7 +271,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. GLOBAL OFFICES / PRESENCE */}
+      {/* 7. GLOBAL OFFICES / WORLD MAP PRESENCE */}
       <section className="py-24 max-w-[1520px] mx-auto px-6 sm:px-10">
         <div className="mb-12">
           <span className="text-xs uppercase font-bold tracking-widest text-neutral-500 font-mono block mb-2">
@@ -242,8 +279,13 @@ export default function HomePage() {
           </span>
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-black leading-none">
             One Studio. Global Thinking. <br />
-            <span className="text-pink-500">Built for the World.</span>
+            <span className="pink-highlight">Built for the World.</span>
           </h2>
+        </div>
+
+        {/* Animated World Map */}
+        <div className="mb-12">
+          <WorldMapAnimation />
         </div>
 
         {/* 4 Office Cards Grid */}
@@ -265,7 +307,8 @@ export default function HomePage() {
                 Gurugram, India
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed mb-4">
-                Lower Ground Floor, 1319, Sec-43, Sushant Lok Phase I, Gurugram, Haryana 122002
+                Lower Ground Floor, 1319, Sec-43, Sushant Lok Phase I, Gurugram,
+                Haryana 122002
               </p>
             </div>
             <a
@@ -294,7 +337,8 @@ export default function HomePage() {
                 Goa, India
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed mb-4">
-                Office No. SF1, 2nd Floor, Solsons Trade Center, Block C, Porvorim, Goa 403521
+                Office No. SF1, 2nd Floor, Solsons Trade Center, Block C,
+                Porvorim, Goa 403521
               </p>
             </div>
             <a
@@ -323,7 +367,8 @@ export default function HomePage() {
                 Dubai, UAE
               </h3>
               <p className="text-xs text-neutral-600 leading-relaxed mb-4">
-                Dhanguard Business Center, 12th Floor, Office 022, Citi Bank Bldg, Healthcare City, Dubai
+                Dhanguard Business Center, 12th Floor, Office 022, Citi Bank
+                Bldg, Healthcare City, Dubai
               </p>
             </div>
             <a
@@ -372,7 +417,9 @@ export default function HomePage() {
               Ideas don&apos;t recognize borders. Neither do we.
             </h3>
             <p className="text-neutral-400 text-sm max-w-2xl">
-              Doors Studio® brings sharp thinking, bold moves, and a fearless attitude to turn your brand from just another option into the only choice.
+              Switch High® brings sharp thinking, bold moves, and a fearless
+              attitude to turn your brand from just another option into the only
+              choice.
             </p>
           </div>
           <button
@@ -395,7 +442,7 @@ export default function HomePage() {
               (Our Portfolio)
             </span>
             <h2 className="text-5xl sm:text-7xl font-black uppercase tracking-tighter text-black leading-none">
-              Featured <span className="text-pink-500">Works.</span>
+              Featured <span className="pink-highlight">Works.</span>
             </h2>
           </div>
           <Link

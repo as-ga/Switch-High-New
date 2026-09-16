@@ -2,7 +2,7 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Website Design & Development Agency | Doors Studio",
+  title: "Website Design & Development Agency | Switch High",
   description:
     "Custom Next.js, React, and full-stack web development services for fast, responsive, and scalable digital experiences.",
 };
@@ -17,7 +17,7 @@ export default function WebDevelopmentPage() {
       aboutTitle="Engineering High-Converting Digital Flagships"
       aboutDescription={[
         "Your website is the heart of your digital presence. If it’s slow, confusing, or looks like a template from 2018, you are losing high-value customers every second.",
-        "At Doors Studio, we engineer bespoke digital flagships that load instantly, enchant visitors with buttery micro-animations, and convert traffic into paying customers.",
+        "At Switch High, we engineer bespoke digital flagships that load instantly, enchant visitors with buttery micro-animations, and convert traffic into paying customers.",
         "Using cutting-edge stacks like Next.js, React, TypeScript, and modern headless CMS systems, we build scalable web architectures designed for hyper-growth.",
       ]}
       deliverables={[

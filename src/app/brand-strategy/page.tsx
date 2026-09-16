@@ -2,9 +2,9 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Brand Strategy Agency in India | Doors Studio",
+  title: "Brand Strategy Agency in India | Switch High",
   description:
-    "Craft bold, standout brand strategies that define market positioning, audience segmentation, and unstoppable growth with Doors Studio.",
+    "Craft bold, standout brand strategies that define market positioning, audience segmentation, and unstoppable growth with Switch High.",
 };
 
 export default function BrandStrategyPage() {

@@ -2,9 +2,9 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Brand Identity & Visual Design Agency | Doors Studio",
+  title: "Brand Identity & Visual Design Agency | Switch High",
   description:
-    "Design memorable visual identity systems, logo systems, brand guidelines, and packaging collateral with Doors Studio.",
+    "Design memorable visual identity systems, logo systems, brand guidelines, and packaging collateral with Switch High.",
 };
 
 export default function BrandIdentityPage() {
@@ -17,33 +17,39 @@ export default function BrandIdentityPage() {
       aboutTitle="Visual Systems That Command Market Respect"
       aboutDescription={[
         "Your brand identity is your visual handshake with the world. It’s what people see, feel, and remember when your name comes up.",
-        "At Doors Studio, we design comprehensive visual languages that speak with authority. From iconic logos and bespoke typography to harmonious color palettes and tactile packaging, we ensure every touchpoint oozes confidence.",
+        "At Switch High, we design comprehensive visual languages that speak with authority. From iconic logos and bespoke typography to harmonious color palettes and tactile packaging, we ensure every touchpoint oozes confidence.",
         "We create design guidelines so thorough and intuitive that your team and partners can scale the brand effortlessly across any medium.",
       ]}
       deliverables={[
         {
           title: "Iconic Logo & Mark Design",
-          description: "Distinctive primary and secondary logos, monograms, and responsive responsive glyphs.",
+          description:
+            "Distinctive primary and secondary logos, monograms, and responsive responsive glyphs.",
         },
         {
           title: "Complete Visual Identity Systems",
-          description: "Color psychology palettes, typography hierarchies, layout grids, and graphic motifs.",
+          description:
+            "Color psychology palettes, typography hierarchies, layout grids, and graphic motifs.",
         },
         {
           title: "Comprehensive Brand Guidelines",
-          description: "A definitive design Bible covering spacing rules, usage do's/don'ts, and media specifications.",
+          description:
+            "A definitive design Bible covering spacing rules, usage do's/don'ts, and media specifications.",
         },
         {
           title: "Brand Architecture & Sub-brands",
-          description: "Structuring multi-product portfolios and sub-brand relationships into an organized ecosystem.",
+          description:
+            "Structuring multi-product portfolios and sub-brand relationships into an organized ecosystem.",
         },
         {
           title: "Tagline & Brand Voice Guidelines",
-          description: "Defining tone of voice, copy dos and don'ts, vocabulary, and elevator pitches.",
+          description:
+            "Defining tone of voice, copy dos and don'ts, vocabulary, and elevator pitches.",
         },
         {
           title: "Packaging & Physical Collateral",
-          description: "Stunning product packaging, business cards, merchandise, and environmental signage.",
+          description:
+            "Stunning product packaging, business cards, merchandise, and environmental signage.",
         },
       ]}
       processSteps={[

@@ -71,7 +71,7 @@ export default function AboutUsPage() {
         <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[16/9] sm:aspect-[21/9] bg-neutral-900 border border-neutral-300">
           <img
             src="https://www.doorsstudio.com/assets/front/img/about-us-image.webp"
-            alt="Doors Studio Agency Beings"
+            alt="Switch High Agency Beings"
             className="w-full h-full object-cover"
           />
         </div>
@@ -96,7 +96,7 @@ export default function AboutUsPage() {
 
             <div className="lg:col-span-7 flex flex-col gap-6 text-neutral-700 text-base sm:text-lg leading-relaxed">
               <p>
-                Founded on the belief that conventional advertising is obsolete, <strong>Doors Studio®</strong> is a powerhouse digital marketing and branding firm operating across India, the UAE, and the USA.
+                Founded on the belief that conventional advertising is obsolete, <strong>Switch High®</strong> is a powerhouse digital marketing and branding firm operating across India, the UAE, and the USA.
               </p>
               <p>
                 We merge razor-sharp creative direction, world-class design engineering, and relentless performance marketing to propel emerging startups and established multinational corporations into category dominance.
@@ -113,7 +113,7 @@ export default function AboutUsPage() {
       <section className="py-24 max-w-[1520px] mx-auto px-6 sm:px-10">
         <div className="mb-16">
           <span className="text-xs uppercase font-bold tracking-widest text-neutral-500 font-mono block mb-2">
-            (The Doors Studio Standard)
+            (The Switch High Standard)
           </span>
           <h2 className="text-4xl sm:text-6xl font-black uppercase tracking-tighter text-black leading-none">
             What Drives Our <span className="text-pink-500">Obsession.</span>

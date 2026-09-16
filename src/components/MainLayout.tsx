@@ -7,7 +7,11 @@ import Footer from "@/components/Footer";
 import EnquiryModal from "@/components/EnquiryModal";
 import FloatingWidgets from "@/components/FloatingWidgets";
 
-export default function MainLayout({ children }: { children: React.ReactNode }) {
+export default function MainLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -21,9 +25,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         onClose={() => setIsMobileMenuOpen(false)}
       />
 
-      <main className="flex-1 w-full pt-20">
-        {children}
-      </main>
+      <main className="flex-1 w-full pt-20">{children}</main>
 
       <Footer />
       <EnquiryModal />

@@ -19,11 +19,11 @@ export default function Footer() {
         <div className="pb-12 border-b border-neutral-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-2xl bg-white text-black flex items-center justify-center font-black text-2xl tracking-tighter">
-              DS
+              SH
             </div>
             <div>
               <span className="text-3xl sm:text-4xl font-black uppercase tracking-tighter block leading-none">
-                DOORS<span className="text-pink-500">.</span>STUDIO
+                SWITCH<span className="text-pink-500">.</span>HIGH
               </span>
               <span className="text-xs uppercase tracking-widest text-neutral-400 font-medium mt-1 block">
                 Best Digital Marketing Agency in India
@@ -122,7 +122,7 @@ export default function Footer() {
           <div className="lg:col-span-3 flex flex-col gap-6">
             <div>
               <h3 className="text-xs uppercase font-bold tracking-widest text-pink-400 mb-2">
-                Doors Studio® India (HQ)
+                Switch High® India (HQ)
               </h3>
               <p className="text-neutral-400 text-xs leading-relaxed">
                 Lower Ground Floor, 1319, Sec-43, Sushant Lok Phase I, Gurugram, Haryana 122002
@@ -137,7 +137,7 @@ export default function Footer() {
 
             <div>
               <h3 className="text-xs uppercase font-bold tracking-widest text-yellow-400 mb-2">
-                Doors Studio® India (GOA)
+                Switch High® India (GOA)
               </h3>
               <p className="text-neutral-400 text-xs leading-relaxed">
                 Office No. SF1, 2nd Floor, Solsons Trade Center, Block C, Porvorim, Goa 403521
@@ -155,7 +155,7 @@ export default function Footer() {
           <div className="lg:col-span-3 flex flex-col gap-6">
             <div>
               <h3 className="text-xs uppercase font-bold tracking-widest text-green-400 mb-2">
-                Doors Studio® UAE (DUBAI)
+                Switch High® UAE (DUBAI)
               </h3>
               <p className="text-neutral-400 text-xs leading-relaxed">
                 Dhanguard Business Center, 12th Floor, Office 022, Citi Bank Bldg, Healthcare City, Dubai
@@ -170,7 +170,7 @@ export default function Footer() {
 
             <div>
               <h3 className="text-xs uppercase font-bold tracking-widest text-orange-400 mb-2">
-                Doors Studio® USA (AUSTIN)
+                Switch High® USA (AUSTIN)
               </h3>
               <p className="text-neutral-400 text-xs leading-relaxed">
                 5900 Balcones Drive, Suite 100, Austin, TX 78731, United States

@@ -2,7 +2,7 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Brand Communication & Storytelling Agency | Doors Studio",
+  title: "Brand Communication & Storytelling Agency | Switch High",
   description:
     "Turn your brand voice into powerful storytelling and integrated communication campaigns that captivate your audience.",
 };

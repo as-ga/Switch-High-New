@@ -99,7 +99,7 @@ export default function CareerPage() {
     <div className="w-full bg-[#f2f2f2] overflow-hidden">
       {/* 1. HERO MARQUEE */}
       <section className="pt-12 sm:pt-16 pb-12">
-        <MarqueeHeader text="Jobs at Doors" reverse={true} speedSeconds={25} />
+        <MarqueeHeader text="Jobs at Switch High" reverse={true} speedSeconds={25} />
 
         <div className="max-w-[1520px] mx-auto px-6 sm:px-10 pt-10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-neutral-300 pb-10">
@@ -147,7 +147,7 @@ export default function CareerPage() {
 
           <div className="lg:col-span-7 flex flex-col justify-center">
             <span className="text-xs font-mono uppercase text-pink-500 font-bold tracking-widest block mb-2">
-              Life At Doors Studio
+              Life At Switch High
             </span>
             <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-black mb-6">
               Bold Ideas, Big Laughs, <br />
@@ -155,7 +155,7 @@ export default function CareerPage() {
             </h2>
             <div className="space-y-4 text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               <p>
-                At Doors Studio, work isn’t just a checklist—it’s an exhilarating ride. We fuel up on creativity, collaboration, and copious amounts of caffeine to turn wild ideas into campaigns that make people stop, stare, and share.
+                At Switch High, work isn’t just a checklist—it’s an exhilarating ride. We fuel up on creativity, collaboration, and copious amounts of caffeine to turn wild ideas into campaigns that make people stop, stare, and share.
               </p>
               <p>
                 Here, every voice counts, and every idea gets its moment in the spotlight. No challenge is too big, no concept too crazy—we break rules and rewrite the playbook to create something that wows.

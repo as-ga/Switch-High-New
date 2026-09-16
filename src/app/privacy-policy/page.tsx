@@ -3,8 +3,8 @@ import Link from "next/link";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy | Doors Studio",
-  description: "Privacy Policy and terms of use for Doors Studio and Signtific Advertising Pvt. Ltd.",
+  title: "Privacy Policy | Switch High",
+  description: "Privacy Policy and terms of use for Switch High and Signtific Advertising Pvt. Ltd.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <span className="text-xs font-mono text-neutral-400">
-              Last Updated: January 2025 | Doors Studio®
+              Last Updated: January 2025 | Switch High®
             </span>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               1. Overview & Scope
             </h2>
             <p>
-              Signtific Advertising Pvt. Ltd. (operating as <strong>Doors Studio®</strong>) is committed to safeguarding the personal data and privacy of our website visitors, clients, and partners. This policy explains how we collect, process, and protect your information.
+              Signtific Advertising Pvt. Ltd. (operating as <strong>Switch High®</strong>) is committed to safeguarding the personal data and privacy of our website visitors, clients, and partners. This policy explains how we collect, process, and protect your information.
             </p>
           </section>
 

@@ -14,8 +14,12 @@ const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
 export function ModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [serviceSelected, setServiceSelected] = useState<string | undefined>(undefined);
-  const [careerSelected, setCareerSelected] = useState<string | undefined>(undefined);
+  const [serviceSelected, setServiceSelected] = useState<string | undefined>(
+    undefined,
+  );
+  const [careerSelected, setCareerSelected] = useState<string | undefined>(
+    undefined,
+  );
 
   const openModal = (service?: string, career?: string) => {
     setServiceSelected(service);
@@ -30,7 +34,9 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ModalContext.Provider value={{ isOpen, serviceSelected, careerSelected, openModal, closeModal }}>
+    <ModalContext.Provider
+      value={{ isOpen, serviceSelected, careerSelected, openModal, closeModal }}
+    >
       {children}
     </ModalContext.Provider>
   );

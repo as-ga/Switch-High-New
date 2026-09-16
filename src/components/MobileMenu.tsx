@@ -33,7 +33,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       <div className="flex justify-between items-center px-6 py-6 border-b border-neutral-800">
         <Link href="/" onClick={onClose} className="flex flex-col">
           <span className="text-2xl font-black tracking-tighter uppercase text-white font-sans">
-            DOORS<span className="text-pink-500">.</span>STUDIO
+            SWITCH<span className="text-pink-500">.</span>HIGH
           </span>
           <span className="text-[9px] tracking-widest uppercase text-neutral-400">
             Digital Marketing Agency

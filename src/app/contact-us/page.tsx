@@ -139,7 +139,7 @@ export default function ContactUsPage() {
                     </label>
                     <input
                       type="text"
-                      placeholder="eg: Doors Studio"
+                      placeholder="eg: Switch High"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       className="w-full bg-[#f8f8f8] border border-neutral-300 rounded-xl px-4 py-3.5 text-black placeholder-neutral-400 focus:outline-none focus:border-black transition-colors text-sm"
@@ -238,7 +238,7 @@ export default function ContactUsPage() {
                   Inquiry Sent Successfully!
                 </h3>
                 <p className="text-neutral-600 text-sm max-w-md mb-8">
-                  Thank you for submitting your brief. A Doors Studio account executive will contact you shortly to schedule an introductory strategy session.
+                  Thank you for submitting your brief. A Switch High account executive will contact you shortly to schedule an introductory strategy session.
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}

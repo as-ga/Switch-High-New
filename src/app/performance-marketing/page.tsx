@@ -2,7 +2,7 @@ import React from "react";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Performance Marketing Agency in India | Doors Studio",
+  title: "Performance Marketing Agency in India | Switch High",
   description:
     "Data-driven paid media campaigns, Google Ads, Meta Ads, SEO, and conversion optimization to boost your revenue and ROAS.",
 };
@@ -16,7 +16,7 @@ export default function PerformanceMarketingPage() {
       videoSrc="https://www.doorsstudio.com/assets/front/videos/performance-marketing.mp4"
       aboutTitle="Scientific Growth Engineering & ROI Maximization"
       aboutDescription={[
-        "Performance marketing at Doors Studio isn’t guesswork—it’s mathematical rigor, continuous A/B testing, and relentless funnel optimization.",
+        "Performance marketing at Switch High isn’t guesswork—it’s mathematical rigor, continuous A/B testing, and relentless funnel optimization.",
         "We manage multi-million dollar ad budgets across Google Search, YouTube, Meta, TikTok, and Programmatic Display. Every dollar spent is tracked to revenue, CAC, and LTV.",
         "Combined with technical SEO and retention messaging, we create sustainable customer acquisition machines.",
       ]}

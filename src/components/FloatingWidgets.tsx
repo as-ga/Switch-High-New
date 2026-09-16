@@ -23,7 +23,7 @@ export default function FloatingWidgets() {
 
       {/* Floating WhatsApp Bubble */}
       <a
-        href="https://api.whatsapp.com/send/?phone=%2B919310922550&text=Hi%20Doors%20Studio,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+        href="https://api.whatsapp.com/send/?phone=%2B919310922550&text=Hi%20Switch%20High,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsappicon"

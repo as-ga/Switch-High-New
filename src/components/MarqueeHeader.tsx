@@ -14,52 +14,48 @@ interface MarqueeHeaderProps {
 
 export default function MarqueeHeader({
   text,
-  subtext,
   reverse = false,
   speedSeconds = 25,
 }: MarqueeHeaderProps) {
-  // Repeat items for seamless infinite marquee
-  const items = Array(8).fill(text);
+  // A clean set of items duplicated so the translation from 0% to -50% is mathematically seamless
+  const repetitions = Array(6).fill(text);
 
   return (
-    <div className="w-full overflow-hidden py-4 select-none">
+    <div className="w-full overflow-hidden py-3 select-none pointer-events-none">
       <div
-        className="flex whitespace-nowrap will-change-transform"
+        className={reverse ? "marquee-track-right" : "marquee-track-left"}
         style={{
-          animation: `${reverse ? "marquee-reverse" : "marquee"} ${speedSeconds}s linear infinite`,
+          animationDuration: `${speedSeconds}s`,
         }}
       >
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="inline-flex items-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter text-black mr-6"
-          >
-            <span>{item}</span>
-            <span className="inline-block mx-4 sm:mx-8 text-pink-500">
-              <Asterisk size={48} className="spin-asterisk" />
-            </span>
-          </div>
-        ))}
-      </div>
+        {/* First Half */}
+        <div className="flex shrink-0 items-center">
+          {repetitions.map((item, idx) => (
+            <div key={`track-a-${idx}`} className="inline-flex items-center">
+              <span className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter text-black">
+                {item}
+              </span>
+              <span className="inline-block mx-4 sm:mx-8 text-pink-500">
+                <Asterisk size={52} className="spin-asterisk" />
+              </span>
+            </div>
+          ))}
+        </div>
 
-      <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        @keyframes marquee-reverse {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0%);
-          }
-        }
-      `}</style>
+        {/* Second Half (Exact Duplicate for seamless infinite loop) */}
+        <div className="flex shrink-0 items-center">
+          {repetitions.map((item, idx) => (
+            <div key={`track-b-${idx}`} className="inline-flex items-center">
+              <span className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter text-black">
+                {item}
+              </span>
+              <span className="inline-block mx-4 sm:mx-8 text-pink-500">
+                <Asterisk size={52} className="spin-asterisk" />
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

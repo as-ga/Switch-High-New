@@ -3,7 +3,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, MessageSquare, Phone, Mail, Menu, X, Asterisk } from "lucide-react";
+import {
+  ChevronDown,
+  MessageSquare,
+  Phone,
+  Mail,
+  Menu,
+  X,
+  Asterisk,
+} from "lucide-react";
 import { useModal } from "@/context/ModalContext";
 
 interface HeaderProps {
@@ -11,7 +19,10 @@ interface HeaderProps {
   isMobileMenuOpen: boolean;
 }
 
-export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderProps) {
+export default function Header({
+  onToggleMobileMenu,
+  isMobileMenuOpen,
+}: HeaderProps) {
   const pathname = usePathname();
   const { openModal } = useModal();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,13 +59,16 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
     >
       <div className="max-w-[1520px] mx-auto px-6 sm:px-10 flex justify-between items-center relative">
         {/* Brand Logo */}
-        <Link href="/" className="inline-flex items-center gap-2 group relative z-10">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 group relative z-10"
+        >
           <div className="flex flex-col">
             <span className="text-2xl sm:text-3xl font-black tracking-tighter uppercase text-black font-sans leading-none flex items-center">
-              DOORS
+              SWITCH
               <span className="text-pink-500 font-bold ml-0.5">.</span>
               <span className="font-light tracking-widest text-xs uppercase bg-black text-white px-1.5 py-0.5 ml-2 rounded">
-                STUDIO
+                HIGH
               </span>
             </span>
             <span className="text-[9px] tracking-widest uppercase text-neutral-500 font-medium mt-0.5">
@@ -68,7 +82,9 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
           <Link
             href="/about-us"
             className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
-              pathname === "/about-us" ? "font-bold text-black border-b-2 border-black" : "text-neutral-800 hover:text-black"
+              pathname === "/about-us"
+                ? "font-bold text-black border-b-2 border-black"
+                : "text-neutral-800 hover:text-black"
             }`}
           >
             About Us
@@ -105,7 +121,9 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
                     }`}
                   >
                     <span>{service.name}</span>
-                    <span className="text-neutral-400 group-hover:text-black text-xs">→</span>
+                    <span className="text-neutral-400 group-hover:text-black text-xs">
+                      →
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -115,7 +133,9 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
           <Link
             href="/our-work"
             className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
-              pathname === "/our-work" ? "font-bold text-black border-b-2 border-black" : "text-neutral-800 hover:text-black"
+              pathname === "/our-work"
+                ? "font-bold text-black border-b-2 border-black"
+                : "text-neutral-800 hover:text-black"
             }`}
           >
             Our Work
@@ -124,7 +144,9 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
           <Link
             href="/career"
             className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
-              pathname === "/career" ? "font-bold text-black border-b-2 border-black" : "text-neutral-800 hover:text-black"
+              pathname === "/career"
+                ? "font-bold text-black border-b-2 border-black"
+                : "text-neutral-800 hover:text-black"
             }`}
           >
             Career
@@ -133,7 +155,9 @@ export default function Header({ onToggleMobileMenu, isMobileMenuOpen }: HeaderP
           <Link
             href="/contact-us"
             className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
-              pathname === "/contact-us" ? "font-bold text-black border-b-2 border-black" : "text-neutral-800 hover:text-black"
+              pathname === "/contact-us"
+                ? "font-bold text-black border-b-2 border-black"
+                : "text-neutral-800 hover:text-black"
             }`}
           >
             Contact Us

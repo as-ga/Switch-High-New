@@ -95,7 +95,7 @@ export default function EnquiryModal() {
           <div>
             <div className="mb-6">
               <span className="text-xs uppercase tracking-widest font-mono text-pink-400 font-semibold flex items-center gap-1.5 mb-1">
-                <Sparkles size={14} /> Doors Studio Global
+                <Sparkles size={14} /> Switch High Global
               </span>
               <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight">
                 {careerSelected ? `Apply For ${careerSelected}` : "Let's Connect"}
@@ -240,7 +240,7 @@ export default function EnquiryModal() {
               Message Received!
             </h3>
             <p className="text-neutral-400 text-sm max-w-md mb-8">
-              Thank you for reaching out to Doors Studio. Our strategy team will review your requirements and reach out via phone/email shortly.
+              Thank you for reaching out to Switch High. Our strategy team will review your requirements and reach out via phone/email shortly.
             </p>
             <button
               onClick={handleReset}
