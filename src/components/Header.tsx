@@ -78,10 +78,10 @@ export default function Header({
         </Link>
 
         {/* Center Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 text-md font-semibold  -translate-x-1/2">
           <Link
             href="/about-us"
-            className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
+            className={`uline  tracking-wider uppercase py-2 transition-colors ${
               pathname === "/about-us"
                 ? "font-bold text-black border-b-2 border-black"
                 : "text-neutral-800 hover:text-black"
@@ -98,13 +98,9 @@ export default function Header({
           >
             <button
               type="button"
-              className="uline text-sm tracking-wider uppercase font-medium py-2 text-neutral-800 hover:text-black flex items-center gap-1 cursor-pointer"
+              className="uline  tracking-wider uppercase py-2 text-neutral-800 hover:text-black flex items-center gap-1 cursor-pointer"
             >
               What We Do
-              <ChevronDown
-                size={14}
-                className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
-              />
             </button>
 
             {dropdownOpen && (
@@ -114,7 +110,7 @@ export default function Header({
                     key={service.href}
                     href={service.href}
                     onClick={() => setDropdownOpen(false)}
-                    className={`px-3 py-2 text-xs uppercase tracking-wider font-semibold rounded-lg transition-colors flex items-center justify-between ${
+                    className={`px-3 py-2  uppercase tracking-wider font-semibold rounded-lg transition-colors flex items-center justify-between ${
                       pathname === service.href
                         ? "bg-black text-white"
                         : "text-neutral-800 hover:bg-neutral-100 hover:text-black"
@@ -132,7 +128,7 @@ export default function Header({
 
           <Link
             href="/our-work"
-            className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
+            className={`uline tracking-wider uppercase  py-2 transition-colors ${
               pathname === "/our-work"
                 ? "font-bold text-black border-b-2 border-black"
                 : "text-neutral-800 hover:text-black"
@@ -143,7 +139,7 @@ export default function Header({
 
           <Link
             href="/career"
-            className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
+            className={`uline  tracking-wider uppercase  py-2 transition-colors ${
               pathname === "/career"
                 ? "font-bold text-black border-b-2 border-black"
                 : "text-neutral-800 hover:text-black"
@@ -154,7 +150,7 @@ export default function Header({
 
           <Link
             href="/contact-us"
-            className={`uline text-sm tracking-wider uppercase font-medium py-2 transition-colors ${
+            className={`uline tracking-wider uppercase py-2 transition-colors ${
               pathname === "/contact-us"
                 ? "font-bold text-black border-b-2 border-black"
                 : "text-neutral-800 hover:text-black"
@@ -168,12 +164,12 @@ export default function Header({
         <div className="hidden lg:flex items-center gap-3">
           <button
             onClick={() => openModal()}
-            className="speak-btn text-xs tracking-wider uppercase"
+            className="speak-btn text-xs tracking-wider"
           >
             <span>Chat with an expert</span>
           </button>
 
-          <a
+          {/* <a
             href="https://api.whatsapp.com/send/?phone=%2B919310922550&text&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
@@ -182,7 +178,7 @@ export default function Header({
             title="Chat on WhatsApp"
           >
             <MessageSquare size={16} />
-          </a>
+          </a> */}
 
           <a
             href="mailto:hello@signtific.co.in"

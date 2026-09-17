@@ -20,21 +20,25 @@ export default function HomePage() {
   const { openModal } = useModal();
 
   return (
-    <div className="w-full bg-[#f2f2f2] overflow-hidden">
+    <div className="w-full bg-[#f2f2f2]">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-12 sm:pt-20 pb-16 px-6 sm:px-10 max-w-[1520px] mx-auto min-h-[85vh] flex flex-col justify-between">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+      <section className="relative pt-12 sm:pt-20 pb-16 px-6 sm:px-10 min-h-[85vh] flex flex-col justify-between w-full">
+        <div className="gap-8 items-start">
           {/* Main Giant Typography */}
-          <div className="lg:col-span-8 flex flex-col">
+          <div className=" flex flex-col items-center justify-center w-full">
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7.5rem] font-black uppercase tracking-tighter leading-[0.9] text-black">
-              <div className="flex items-center flex-wrap gap-2 sm:gap-4">
+              <div className="flex items-center flex-wrap  w-full gap-2 sm:gap-4">
                 <Asterisk
                   size={60}
                   className="spin-asterisk text-black shrink-0"
                 />
+                <Asterisk size={60} strokeWidth={10.5} absoluteStrokeWidth />
+                <Asterisk size={16} strokeWidth={2.25} absoluteStrokeWidth />
                 <span>Define</span>
                 <span className="pink-highlight">.</span>
+                {"\u00A0"}
                 <span>Design</span>
+
                 <span className="yellow-highlight">.</span>
               </div>
               <div className="text-left sm:text-right text-neutral-900">
@@ -142,18 +146,18 @@ export default function HomePage() {
             <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-tight text-neutral-700 mb-6 font-mono">
               Think big with us.
             </h3>
-            <div className="rounded-3xl overflow-hidden bg-black shadow-xl aspect-square sm:aspect-[4/5] border border-neutral-300">
-              <video
-                src="https://www.doorsstudio.com/assets/front/videos/marketing-is-our-jam.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {/* <div className="rounded-3xl overflow-hidden bg-black shadow-xl aspect-square sm:aspect-[4/5] border border-neutral-300"> */}
+            <video
+              src="https://www.doorsstudio.com/assets/front/videos/marketing-is-our-jam.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            />
           </div>
+          {/* </div> */}
 
           {/* Right Column: Copy & Actions */}
           <div className="lg:col-span-7 flex flex-col justify-center">
